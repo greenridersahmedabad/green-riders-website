@@ -34,17 +34,17 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-      
         <Route
-          path="/"
+          path={`${isprod ? "/green-riders-website" : "/"}`}
           element={
             <PageWrapper>
               <Home />
             </PageWrapper>
           }
         />
+
         <Route
-          path="/about"
+          path={`${isprod ? "/green-riders-website" : "/about"}`}
           element={
             <PageWrapper>
               <About />
@@ -52,7 +52,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/blog"
+          path={`${isprod ? "/green-riders-website" : "/blog"}`}
           element={
             <PageWrapper>
               <Blog />
@@ -60,7 +60,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/events"
+          path={`${isprod ? "/green-riders-website" : "/events"}`}
           element={
             <PageWrapper>
               <Events />
@@ -77,14 +77,13 @@ function AnimatedRoutes() {
 function PageWrapper({ children }) {
   return (
     <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.2 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
     >
-        {children}
+      {children}
     </motion.div>
-
   );
 }
 

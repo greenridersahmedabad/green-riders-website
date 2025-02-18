@@ -10,6 +10,7 @@ export default defineConfig({
   // base: '/',
   define: {
     __APP_VERSION__: JSON.stringify(process.env.VITE_GIT_COMMIT_ID || 'dev'),
+    isprod: process.env.NODE_ENV === 'production'
   },
   optimizeDeps: {
     exclude: ['lucide-react'],
