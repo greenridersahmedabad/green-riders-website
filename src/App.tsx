@@ -68,7 +68,7 @@ function AnimatedRoutes() {
           }
         />
         {/* Redirect all other paths to "/" */}
-        {/* <Route path="/*" element={<Navigate to="/" />} /> */}
+        <Route path="/*" element={<Navigate to="404" />} />
       </Routes>
     </AnimatePresence>
   );
