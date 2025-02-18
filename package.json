@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://greenridersahmedabad.github.io/green-riders-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
