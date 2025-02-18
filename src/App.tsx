@@ -1,11 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import Events from './pages/Events';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Events from "./pages/Events";
+import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
   return (
@@ -13,18 +20,71 @@ function App() {
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/events" element={<Events />} />
-            {/* Redirect all other paths to "/" */}
-            <Route path="/*" element={<Navigate to="/" />} />
-          </Routes>
+          <AnimatedRoutes />
         </main>
         <Footer />
       </div>
     </Router>
+  );
+}
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+      
+        <Route
+          path="/"
+          element={
+            <PageWrapper>
+              <Home />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <PageWrapper>
+              <About />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/blog"
+          element={
+            <PageWrapper>
+              <Blog />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/events"
+          element={
+            <PageWrapper>
+              <Events />
+            </PageWrapper>
+          }
+        />
+        {/* Redirect all other paths to "/" */}
+        <Route path="/*" element={<Navigate to="/" />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
+
+function PageWrapper({ children }) {
+  return (
+    <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+    >
+        {children}
+    </motion.div>
+
   );
 }
 
