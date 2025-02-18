@@ -1,50 +1,27 @@
-import React from 'react';
-import { Calendar, User, ArrowRight } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Calendar, User, ArrowRight } from "lucide-react";
+import { blogs } from "../content/blogs";
+
+const categories = [
+  "All Posts",
+  "Adventure",
+  "Tips & Tricks",
+  "Guides",
+  "Events",
+  "Community",
+];
 
 const Blog = () => {
-  const blogs = [
-    {
-      title: "10 Tips for Eco-Friendly Cycling",
-      excerpt: "Discover how to make your cycling journey more environmentally conscious with these practical tips.",
-      image: "https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      author: "Alex Thompson",
-      date: "March 1, 2024",
-      category: "Tips & Tricks"
-    },
-    {
-      title: "Our Latest Mountain Trail Adventure",
-      excerpt: "Join us as we recount our exciting journey through the challenging mountain trails last weekend.",
-      image: "https://images.unsplash.com/photo-1544191696-102ad421359b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      author: "Sarah Chen",
-      date: "February 28, 2024",
-      category: "Adventure"
-    },
-    {
-      title: "Beginner's Guide to Group Riding",
-      excerpt: "Everything you need to know about joining and enjoying group cycling events safely.",
-      image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      author: "Marcus Rodriguez",
-      date: "February 25, 2024",
-      category: "Guides"
-    }
-  ];
-
-  const categories = [
-    "All Posts",
-    "Adventure",
-    "Tips & Tricks",
-    "Guides",
-    "Events",
-    "Community"
-  ];
-
   return (
     <div className="bg-brand-50 min-h-screen">
       {/* Header */}
       <section className="bg-brand-200 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Green Riders Blog</h1>
-          <p className="text-xl">Stories, tips, and adventures from our cycling community</p>
+          <p className="text-xl">
+            Stories, tips, and adventures from our cycling community
+          </p>
         </div>
       </section>
 
@@ -54,19 +31,28 @@ const Blog = () => {
           <div className="lg:w-2/3">
             <div className="grid gap-8">
               {blogs.map((blog, index) => (
-                <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <article
+                  key={index}
+                  className="bg-white rounded-lg shadow-md overflow-hidden"
+                >
                   <div className="md:flex">
                     <div className="md:w-1/3">
-                      <img 
-                        src={blog.image} 
+                      <img
+                        src={blog.image}
                         alt={blog.title}
                         className="h-48 w-full object-cover md:h-full"
                       />
                     </div>
                     <div className="p-6 md:w-2/3">
-                      <span className="text-brand-200 text-sm font-semibold">{blog.category}</span>
-                      <h2 className="text-xl font-bold mt-2 mb-4">{blog.title}</h2>
-                      <p className="text-gray-600 mb-4">{blog.excerpt}</p>
+                      <span className="text-brand-200 text-sm font-semibold">
+                        {blog.category}
+                      </span>
+                      <h2 className="text-xl font-bold mt-2 mb-4">
+                        {blog.title}
+                      </h2>
+                      <p className="text-gray-600 mb-4">
+                        {blog.highlightText.slice(0, 100)}...
+                      </p>
                       <div className="flex items-center text-gray-500 text-sm mb-4">
                         <div className="flex items-center mr-4">
                           <User className="h-4 w-4 mr-1" />
@@ -77,9 +63,12 @@ const Blog = () => {
                           {blog.date}
                         </div>
                       </div>
-                      <button className="text-brand-200 font-semibold hover:text-brand-300 inline-flex items-center">
+                      <Link
+                        to={`/blog/${blog.slug}`}
+                        className="text-brand-200 font-semibold hover:text-brand-300 inline-flex items-center"
+                      >
                         Read More <ArrowRight className="h-4 w-4 ml-1" />
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </article>
@@ -115,8 +104,12 @@ const Blog = () => {
 
             {/* Newsletter */}
             <div className="bg-brand-200 rounded-lg shadow-md p-6 text-white">
-              <h3 className="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h3>
-              <p className="mb-4">Get the latest updates from our cycling community!</p>
+              <h3 className="text-lg font-semibold mb-4">
+                Subscribe to Our Newsletter
+              </h3>
+              <p className="mb-4">
+                Get the latest updates from our cycling community!
+              </p>
               <input
                 type="email"
                 placeholder="Enter your email"

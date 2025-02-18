@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Events from "./pages/Events";
 import { AnimatePresence, motion } from "framer-motion";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
   return (
@@ -28,14 +29,12 @@ function App() {
   );
 }
 
-
 function AnimatedRoutes() {
   const location = useLocation();
 
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-      
         <Route
           path="/"
           element={
@@ -68,6 +67,14 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+        <Route
+          path="/blog/:slug"
+          element={
+            <PageWrapper>
+              <BlogDetail />
+            </PageWrapper>
+          }
+        />
         {/* Redirect all other paths to "/" */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
@@ -78,14 +85,13 @@ function AnimatedRoutes() {
 function PageWrapper({ children }) {
   return (
     <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.2 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
     >
-        {children}
+      {children}
     </motion.div>
-
   );
 }
 
