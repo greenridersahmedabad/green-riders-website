@@ -1,7 +1,7 @@
 import { Instagram, Bike, Mail, MapPin, Youtube } from "lucide-react";
 
 export const footer = {
-  copyright: `© ${new Date().getFullYear()} Green Riders. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} Green Riders. All rights reserved. Version: ${__APP_VERSION__}`,
   section1: {
     title: "Green Riders",
     content:

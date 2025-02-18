@@ -25,11 +25,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
-        run: npm run build
+      - name: Build project with Git Commit ID
+        run: |
+          export VITE_GIT_COMMIT_ID=$(git rev-parse --short HEAD)
+          echo "Building with commit ID: $VITE_GIT_COMMIT_ID"
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Deploy to gh-pages branch
-          folder: dist       # Output folder from Vite build
+          branch: gh-pages
+          folder: dist
