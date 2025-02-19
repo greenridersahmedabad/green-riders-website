@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "echo \"VITE_GIT_COMMIT_ID=$(git rev-parse HEAD)\" > .env",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",

@@ -6,6 +6,7 @@ import {
 import { homePage } from "../content/home-page";
 import HeroCarousel from "./HeroCarousel";
 import { stats } from "../content/stasts";
+import { quote } from "../content/quotes";
 
 const Home = () => {
   return (
@@ -83,29 +84,10 @@ const Home = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
-            What Our Riders Say
+            {quote.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                quote:
-                  "Green Riders changed my perspective on cycling. It's not just about exercise, it's about community and environmental impact.",
-                author: "Sarah Johnson",
-                role: "Member since 2023",
-              },
-              {
-                quote:
-                  "The weekend rides are the highlight of my week. Great routes, amazing people, and a shared mission to protect our planet.",
-                author: "Michael Chen",
-                role: "Member since 2022",
-              },
-              {
-                quote:
-                  "I've made lifelong friends here. The community is supportive, and the rides are always well-organized.",
-                author: "Emma Rodriguez",
-                role: "Member since 2023",
-              },
-            ].map((testimonial, index) => (
+            {quote.quotes.map((testimonial, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6">
                 <p className="text-gray-600 mb-4">{testimonial.quote}</p>
                 <div>
