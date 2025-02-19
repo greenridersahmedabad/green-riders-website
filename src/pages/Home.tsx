@@ -1,7 +1,11 @@
-import React from "react";
-import { ArrowRight, Calendar, Users, MapPin } from "lucide-react";
+import {
+  Users,
+  Award,
+  Bike,
+} from "lucide-react";
 import { homePage } from "../content/home-page";
-import HeroCarousel  from "./HeroCarousel";
+import HeroCarousel from "./HeroCarousel";
+import { stats } from "../content/stasts";
 
 const Home = () => {
   return (
@@ -9,7 +13,36 @@ const Home = () => {
       {/* Hero Section */}
       <HeroCarousel slides={homePage.heroSection.slides} />
 
-      {/* Upcoming Events */}
+      {/* Stats */}
+      <section className="py-16 bg-brand-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-brand-50 p-6 rounded-lg text-center">
+                <Users className="h-8 w-8 mx-auto mb-2 text-brand-200" />
+                <h3 className="text-2xl font-bold text-brand-200">
+                  {stats.activeMembers.total}
+                </h3>
+                <p className="text-gray-600">{stats.activeMembers.title}</p>
+              </div>
+              <div className="bg-brand-50 p-6 rounded-lg text-center">
+                <Award className="h-8 w-8 mx-auto mb-2 text-brand-200" />
+                <h3 className="text-2xl font-bold text-brand-200">
+                  {stats.ridesCompleted.total}
+                </h3>
+                <p className="text-gray-600">{stats.ridesCompleted.title}</p>
+              </div>
+              <div className="bg-brand-50 p-6 rounded-lg text-center">
+                <Bike className="h-8 w-8 mx-auto mb-2 text-brand-200" />
+                <h3 className="text-2xl font-bold text-brand-200">
+                  {stats.kmsRidden.total}
+                </h3>
+                <p className="text-gray-600">{stats.kmsRidden.title}</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      {/* Upcoming Events
       <section className="py-16 bg-brand-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
@@ -44,7 +77,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
       <section className="py-16">
