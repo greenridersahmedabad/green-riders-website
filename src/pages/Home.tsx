@@ -2,56 +2,12 @@ import React from "react";
 import { ArrowRight, Calendar, Users, MapPin } from "lucide-react";
 import { homePage } from "../content/home-page";
 import HeroCarousel  from "./HeroCarousel";
-import Image1 from "../images/Carousel/GR GROUP 1.jpg";
-import Image2 from "../images/Carousel/GR GROUP 1.jpg";
-import Image3 from "../images/Carousel/GR GROUP 1.jpg";
-
-const dummySlides = [
-  {
-    image: Image1,
-    title: "Explore the Beauty of Nature",
-    content: "Discover breathtaking landscapes and immerse yourself in the tranquility of nature.",
-    button: { content: "Learn More" },
-  },
-  {
-    image: Image2,
-    title: "Adventure Awaits",
-    content: "Embark on an exciting journey and make unforgettable memories.",
-    button: { content: "Start Now" },
-  },
-  {
-    image: Image3,
-    title: "Experience the City Lights",
-    content: "Witness the vibrant nightlife and cultural richness of urban landscapes.",
-    button: { content: "Discover More" },
-  },
-];
 
 const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <HeroCarousel slides={dummySlides} />
-      {/* <section
-        className="relative h-[80vh] bg-cover bg-center flex items-center"
-        style={{
-          backgroundImage:
-            `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${homePage.heroSection.image}")`,
-        }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            {homePage.heroSection.title}
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            {homePage.heroSection.content}
-          </p>
-          <button className="bg-brand-200 text-white px-8 py-3 rounded-full font-semibold hover:bg-brand-300 transition-colors inline-flex items-center space-x-2">
-            <span>{homePage.heroSection.button.content}</span>
-            <ArrowRight className="h-5 w-5" />
-          </button>
-        </div>
-      </section> */}
+      <HeroCarousel slides={homePage.heroSection.slides} />
 
       {/* Upcoming Events */}
       <section className="py-16 bg-brand-50">

@@ -49,22 +49,47 @@ export const footer = {
     title: "Follow Us",
     socialLinks: [
       {
+        id: "instagram",
         icon: <Instagram className="h-6 w-6" />,
         link: "https://www.instagram.com/green_riders_ahmedabad",
         target: "_blank"
 
       },
       {
+        id: "strava",
         icon: <Bike className="h-6 w-6" />,
         link: "https://www.strava.com/clubs/green-riders-ahmedabad",
         target: "_blank"
 
       },
       {
+        id: "youtube",
         icon: <Youtube className="h-6 w-6" />,
         link: "https://youtube.com/@greenriderscyclinggroupamdavad",
         target: "_blank"
       },
     ],
+    sl : {
+      instagram:{
+          id: "instagram",
+          icon: <Instagram className="h-6 w-6" />,
+          link: "https://www.instagram.com/green_riders_ahmedabad",
+          target: "_blank"
+  
+        },
+        strava:{
+          id: "strava",
+          icon: <Bike className="h-6 w-6" />,
+          link: "https://www.strava.com/clubs/green-riders-ahmedabad",
+          target: "_blank"
+  
+        },
+        youtube: {
+          id: "youtube",
+          icon: <Youtube className="h-6 w-6" />,
+          link: "https://youtube.com/@greenriderscyclinggroupamdavad",
+          target: "_blank"
+        },
+    }
   },
 };
