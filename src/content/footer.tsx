@@ -1,5 +1,8 @@
 import { Instagram, Bike, Mail, MapPin, Youtube } from "lucide-react";
 
+export const whatsappNumber = "919825556300";
+const message = "Hi Green Riders! I'm excited to join your cycling community and start pedaling with like-minded riders.";
+
 export const footer = {
   copyright: `© ${new Date().getFullYear()} Green Riders. All rights reserved. Version: ${__APP_VERSION__}`,
   section1: {
@@ -90,6 +93,15 @@ export const footer = {
           link: "https://youtube.com/@greenriderscyclinggroupamdavad",
           target: "_blank"
         },
-    }
+    },
+
   },
+  joinUs: {
+    whatsappRedirect: {
+      url: `https://wa.me/${whatsappNumber}?text=${message}`
+    },
+    stravaRedirect:{
+      url: `https://www.strava.com/clubs/green-riders-ahmedabad`
+    }
+  }
 };

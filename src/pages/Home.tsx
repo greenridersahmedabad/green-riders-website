@@ -7,6 +7,7 @@ import { homePage } from "../content/home-page";
 import HeroCarousel from "./HeroCarousel";
 import { stats } from "../content/stasts";
 import { quote } from "../content/quotes";
+import { footer } from "../content/footer";
 
 const Home = () => {
   return (
@@ -110,9 +111,11 @@ const Home = () => {
             Become part of a movement that combines the joy of cycling with
             environmental consciousness.
           </p>
+          <a href={footer.joinUs.whatsappRedirect.url} target="_blank">
           <button className="bg-white text-brand-300 px-8 py-3 rounded-full font-semibold hover:bg-brand-50 transition-colors">
             Get Started Today
           </button>
+          </a>
         </div>
       </section>
     </div>
