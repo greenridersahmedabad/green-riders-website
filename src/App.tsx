@@ -68,7 +68,7 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
-                <Route
+        <Route
           path="/events/:eventId"
           element={
             <PageWrapper>
@@ -98,6 +98,7 @@ function PageWrapper({ children }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
+      className="bg-brand-50"
     >
       {children}
     </motion.div>

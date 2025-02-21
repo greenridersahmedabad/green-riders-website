@@ -29,12 +29,6 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/about"
-              className="text-brand-100 font-bold hover:text-brand-50 transition-colors"
-            >
-              About
-            </Link>
-            <Link
               to="/blog"
               className="text-brand-100 font-bold hover:text-brand-50 transition-colors"
             >
@@ -45,6 +39,12 @@ const Navbar = () => {
               className="text-brand-100 font-bold hover:text-brand-50 transition-colors"
             >
               Events
+            </Link>
+            <Link
+              to="/about"
+              className="text-brand-100 font-bold hover:text-brand-50 transition-colors"
+            >
+              About
             </Link>
             <a href={footer.joinUs.whatsappRedirect.url} target="_blank">
               <button className="bg-white text-brand-300 px-4 py-2 rounded-full font-semibold hover:bg-brand-50 transition-colors">

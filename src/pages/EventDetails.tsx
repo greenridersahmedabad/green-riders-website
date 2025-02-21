@@ -13,7 +13,7 @@ export default function EventDetails() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="bg-brand-50 max-w-4xl mx-auto p-6">
       <Link to="/events" className="text-brand-200 font-semibold flex items-center mb-4">
         <ArrowLeft className="h-4 w-4 mr-2" /> Back to Events
       </Link>
