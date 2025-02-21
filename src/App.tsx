@@ -14,6 +14,7 @@ import Blog from "./pages/Blog";
 import Events from "./pages/Events";
 import { AnimatePresence, motion } from "framer-motion";
 import BlogDetail from "./pages/BlogDetail";
+import EventDetails from "./pages/EventDetails";
 
 function App() {
   return (
@@ -64,6 +65,14 @@ function AnimatedRoutes() {
           element={
             <PageWrapper>
               <Events />
+            </PageWrapper>
+          }
+        />
+                <Route
+          path="/events/:eventId"
+          element={
+            <PageWrapper>
+              <EventDetails />
             </PageWrapper>
           }
         />

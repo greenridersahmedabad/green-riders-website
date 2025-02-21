@@ -76,12 +76,6 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/about"
-                className="block px-3 py-2 rounded-md hover:bg-brand-300"
-              >
-                About
-              </Link>
-              <Link
                 to="/blog"
                 className="block px-3 py-2 rounded-md hover:bg-brand-300"
               >
@@ -93,10 +87,16 @@ const Navbar = () => {
               >
                 Events
               </Link>
+              <Link
+                to="/about"
+                className="block px-3 py-2 rounded-md hover:bg-brand-300"
+              >
+                About
+              </Link>
               <a href={footer.joinUs.whatsappRedirect.url} target="_blank">
-              <button className="w-full text-center bg-white text-brand-300 px-4 py-2 rounded-full font-semibold hover:bg-brand-50 transition-colors">
-                Join Us
-              </button>
+                <button className="w-full text-center bg-white text-brand-300 px-4 py-2 rounded-full font-semibold hover:bg-brand-50 transition-colors">
+                  Join Us
+                </button>
               </a>
             </div>
           </div>
