@@ -2,6 +2,7 @@ import React from "react";
 import { Award, Heart, Users, Bike } from "lucide-react";
 import { aboutUsPage } from "../content/about-us";
 import { stats } from "../content/stasts";
+import Gallery from "../components/Gallery";
 
 const About = () => {
   return (
@@ -98,6 +99,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery */}
+      <Gallery />  
 
       {/* Join CTA */}
       <section className="py-16 bg-brand-200 text-white">
