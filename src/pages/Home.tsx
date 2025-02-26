@@ -8,6 +8,7 @@ import HeroCarousel from "./HeroCarousel";
 import { stats } from "../content/stasts";
 import { quote } from "../content/quotes";
 import { footer } from "../content/footer";
+import Testimony from "../components/Testimony";
 
 const Home = () => {
   return (
@@ -44,62 +45,8 @@ const Home = () => {
           </div>
       </section>
 
-      {/* Upcoming Events
-      <section className="py-16 bg-brand-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            {homePage.events.title}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {homePage.events.rides.map((event, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-              >
-                <h3 className="text-xl font-semibold mb-4">{event.title}</h3>
-                <div className="space-y-2 text-gray-600">
-                  <div className="flex items-center space-x-2">
-                    <Calendar className="h-5 w-5 text-brand-200" />
-                    <span>{event.date}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="h-5 w-5 text-brand-200" />
-                    <span>{event.location}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Users className="h-5 w-5 text-brand-200" />
-                    <span>{event.participants} riders joined</span>
-                  </div>
-                </div>
-                <button className="mt-4 text-brand-300 font-semibold hover:text-brand-400 inline-flex items-center space-x-1">
-                  <span>Learn More</span>
-                  <ArrowRight className="h-4 w-4" />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Testimonials */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            {quote.title}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {quote.quotes.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6">
-                <p className="text-gray-600 mb-4">{testimonial.quote}</p>
-                <div>
-                  <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-sm text-brand-200">{testimonial.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Testimony />
 
       {/* Join Us CTA */}
       <section className="py-16 bg-brand-200 text-white">
