@@ -14,6 +14,10 @@ export const footer = {
     title: "Quick Links",
     links: [
       {
+        label: "Home",
+        url: "/",
+      },
+      {
         label: "About Us",
         url: "/about",
       },
@@ -24,11 +28,7 @@ export const footer = {
       {
         label: "Events",
         url: "/events",
-      },
-      {
-        label: "Contact",
-        url: "#contact",
-      },
+      }
     ],
   },
   section3: {

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import GRlogo from "../images/logos/green-riders-logo.png";
-import { homePage } from "../content/home-page";
 import { footer } from "../content/footer";
 
 const Navbar = () => {

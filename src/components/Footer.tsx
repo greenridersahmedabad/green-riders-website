@@ -1,6 +1,6 @@
 import React from "react";
-import { Instagram, Facebook, Mail, MapPin } from "lucide-react";
 import { footer } from "../content/footer";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,22 +12,27 @@ const Footer = () => {
             <p className="text-brand-50">{footer.section1.content}</p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">{footer.section2.title}</h4>
+            <h4 className="text-lg font-semibold mb-4">
+              {footer.section2.title}
+            </h4>
             <ul className="space-y-2">
               {footer.section2.links.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.url}
+                  <Link
+                    to={link.url}
                     className="text-brand-100 hover:text-white"
                   >
+                    {" "}
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">{footer.section3.title}</h4>
+            <h4 className="text-lg font-semibold mb-4">
+              {footer.section3.title}
+            </h4>
             <ul className="space-y-2 text-brand-100">
               {footer.section3.contactList.map((contact, index) => (
                 <li key={index}>
@@ -44,27 +49,25 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">{footer.section4.title}</h4>
+            <h4 className="text-lg font-semibold mb-4">
+              {footer.section4.title}
+            </h4>
             <div className="flex space-x-4">
-              {
-                footer.section4.socialLinks.map((social, index) =>(
-                  <a
-                    target={social.target}
-                    key={index}
-                    href={social.link}
-                    className="text-brand-100 hover:text-white"
-                  >
-                    {social.icon}
-                  </a>
-                ))
-              }
+              {footer.section4.socialLinks.map((social, index) => (
+                <a
+                  target={social.target}
+                  key={index}
+                  href={social.link}
+                  className="text-brand-100 hover:text-white"
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-brand-400 text-center text-brand-100">
-          <p>
-            {footer.copyright}
-          </p>
+          <p>{footer.copyright}</p>
         </div>
       </div>
     </footer>
