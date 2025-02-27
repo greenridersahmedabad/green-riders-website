@@ -21,21 +21,29 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-16">
+      <section className="py-16 bg-brand-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Green Riders was founded in 2022 by a group of passionate
-                cyclists who believed in the power of two wheels to make a
-                difference. What started as weekend rides with friends has grown
-                into a movement of environmentally conscious cyclists.
+                Green Riders was founded on 5 March 2024 by a group of
+                passionate cyclists who believed in the power of two wheels to
+                make a difference.
               </p>
-              <p className="text-gray-600">
-                Today, we organize regular rides, workshops, and events that
-                bring together cyclists of all levels while promoting
-                sustainable transportation and environmental awareness.
+              <p className="text-gray-600 mb-4">
+                With the motto of Riding while Exploring Nature, Green Riders
+                stands apart by focusing on off-road adventures, heritage
+                trails, village rides, forest expeditions, and monsoon
+                explorations, rather than just distance cycling on routine
+                routes. Our journey has been filled with remarkable
+                achievements.
+              </p>
+              <p className="text-gray-600 mb-4">
+                GREEN RIDERS works & support for all social initiatives- NO
+                Drugs, Save Soil, Save Nature, Save Environment, Pedalling for
+                Health, FIT INDIA, Swachh Bharat Mission and all major
+                Cyclothons being organized for noble cause.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -101,7 +109,7 @@ const About = () => {
       </section>
 
       {/* Gallery */}
-      <Gallery />  
+      <Gallery />
 
       {/* Join CTA */}
       <section className="py-16 bg-brand-200 text-white">

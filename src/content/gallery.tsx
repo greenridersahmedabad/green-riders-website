@@ -1,9 +1,11 @@
+import RoadAwarenessRide from '../images/gallery/Road-awareness-ride.jpg';
+
 export const galleryImages = [
   {
-    url: "https://images.unsplash.com/photo-1541625602330-2277a4c46182?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    url: RoadAwarenessRide,
     category: "group",
-    title: "Weekend Group Ride",
-    alt: "Weekend Group Ride",
+    title: "Road Awareness Ride",
+    alt: "Road Awareness Ride",
     description: "Our community enjoying a scenic weekend ride together"
   },
   {
