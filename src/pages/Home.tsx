@@ -8,6 +8,7 @@ import HeroCarousel from "./HeroCarousel";
 import { stats } from "../content/stasts";
 import { quote } from "../content/quotes";
 import { footer } from "../content/footer";
+import QuoteSlider from "../components/QuoteSlider";
 
 const Home = () => {
   return (
@@ -82,7 +83,7 @@ const Home = () => {
       </section> */}
 
       {/* Testimonials */}
-      <section className="bg-white py-16">
+      {/* <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
             {quote.title}
@@ -99,7 +100,8 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <QuoteSlider />
 
       {/* Join Us CTA */}
       <section className="py-16 bg-brand-200 text-white">
