@@ -4,32 +4,6 @@ import { events } from "../content/events";
 import { Link } from "react-router-dom";
 
 const Events = () => {
-  const upcomingEvents = [
-    {
-      title: "Weekend Trail Ride",
-      date: "March 15, 2024",
-      time: "7:00 AM",
-      location: "Green Valley Trail",
-      distance: "30km",
-      difficulty: "Intermediate",
-      participants: 12,
-      maxParticipants: 20,
-      image:
-        "https://images.unsplash.com/photo-1544191696-102ad421359b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "City Night Ride",
-      date: "March 20, 2024",
-      time: "8:00 PM",
-      location: "Downtown Loop",
-      distance: "20km",
-      difficulty: "Beginner",
-      participants: 25,
-      maxParticipants: 30,
-      image:
-        "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    },
-  ];
 
   return (
     <div className="bg-brand-50 min-h-screen">
