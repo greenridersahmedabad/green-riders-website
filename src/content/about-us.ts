@@ -15,7 +15,7 @@ export const aboutUsPage = {
         role: "Founder",
         image: HK,
         strava: "https://strava.app.link/lE2hA7vBnRb",
-        bio: "Passionate cyclist dedicated to guiding group on unforgettable rides & fostering a sense of community among our members. Explored countless routes and trails.Under expert leadership, Green Riders has become a haven for cycling enthusiasts of all levels, from beginners to seasoned riders."
+        bio: "The visionary leader, brings together great outdoor adventure, beautiful nature, cultural heritage, and cycling passion to create unique and unforgettable experiences. Exploring countless hidden trails, discovered off-the-beaten-path gems & fostering a sense of community among our members. Under expert leadership, Green Riders has become a haven for cycling enthusiasts of all levels, from beginners to seasoned riders."
       },
       {
         name: "Ayush Kholiya",
