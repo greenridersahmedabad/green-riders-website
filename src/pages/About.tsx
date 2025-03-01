@@ -89,7 +89,15 @@ const About = () => {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                  <a
+                    href={member.strava}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-brand-500 hover:underline"
+                  >
+
+                    <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                  </a>
                   <p className="text-brand-200 mb-4">{member.role}</p>
                   <p className="text-gray-600">{member.bio}</p>
                 </div>
