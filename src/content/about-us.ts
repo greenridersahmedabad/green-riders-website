@@ -29,7 +29,7 @@ export const aboutUsPage = {
         role: "CoFounder",
         image: MV,
         strava: "https://strava.app.link/qUsuCpzBnRb",
-        bio: "Community builder and social media expert. Ensures every member feels welcome and connected."
+        bio: "Fearless Multi-faceted enthusiast is also a gifted photographer and videographer, capturing the thrill and beauty of our rides through stunning visuals that leave us breathless. With feet that seem rooted to the pedals, He exhibits amazing stability and control on even the most challenging terrain, inspiring awe and admiration from fellow riders. A speed demon and endurance rider embodies the spirit of adventure and determination that defines our cycling community."
       }
     ]
   }
