@@ -1,4 +1,4 @@
-import { GRGP2025, Heritage2024 } from "../images/blogs"
+import { GRGP2025, Heritage2024, KantharPurCenturyRide } from "../images/blogs"
 
 
 export const events = [
@@ -21,5 +21,23 @@ export const events = [
         participants: 15,
         image: Heritage2024,
         description: `Discovering Hidden Gems: 20km Ahmedabad Walled City Heritage Ride We explored the vibrant streets of our own UNESCO World Heritage City! 20 Km Walled City Ride covered Key landmarks: Lakkhadiyo Bridge, Kalupur Swaminarayan Mandir, Poet Dalpatram Chowk, Kalupur Darwaja, Prem Darwaja, Dariyapur Darwaja, Delhi Darwaja, Hathising ni vadi. Special treat - Savoring traditional Navkarsi breakfast at the historic Hathising Dera! A memorable ride through Ahmedabad's rich cultural heritage!`
+    },
+    {
+        id: 'kantharpur-century-ride',
+        title: "Kantharpur Banyan Tree Century Ride",
+        date: "July 28, 2024",
+        location: "Kantharpur",
+        distance: "122 km",
+        participants: 20,
+        image: KantharPurCenturyRide,
+        description: "Century Ride from Ahmedabad to Kantharpur. 120 Km Ride covering 2 heritage places -Halisha village’s Spiral Well and 500 years old Banyan Tree of Kantharpur. Out of 20, that was the first century ride of 10 riders. Enjoyed wonderful ride with nature passing through the greenery and farms of many villages on the route. Village Halisa on the route of Kantharpur is famous for their ''Spiral Step Well'' -called ''Bhbhammariyo Kuvo”, the unexplored heritage place – we visited this beautiful place. This stepwell is similar to the UNESCO World Heritage well in Portugal. Kantharpur Mahakali Vad, spread across over half an acre is the second largest Banyan tree after Kabirvad."
     }
 ];
+
+export const sortingUtility = <T extends { date: string }>(data: T[], desc: boolean): T[] => {
+    return [...data].sort((a, b) => {
+        return desc
+            ? new Date(b.date).getTime() - new Date(a.date).getTime() // Descending order
+            : new Date(a.date).getTime() - new Date(b.date).getTime(); // Ascending order
+    });
+};

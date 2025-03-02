@@ -1,12 +1,13 @@
 import AK from '../images/founders/AK.jpg';
 import HK from '../images/founders/HK.jpg';
 import MV from '../images/founders/MV.jpg';
+import AboutUsImage from '../images/founders/about-us-image.jpg'
 
 
 export const aboutUsPage = {
   title: 'About Green Riders',
-  content: 'A community of cyclists dedicated to promoting sustainable transportation and environmental consciousness.',
-  image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+  content: 'We are Green Riders, a community of passionate cyclists who embark on daily rides for health, explore green routes, and promote cycling as a daily habit to make our planet more sustainable.',
+  image: AboutUsImage,
   coreTeam: {
     title: "",
     members: [
