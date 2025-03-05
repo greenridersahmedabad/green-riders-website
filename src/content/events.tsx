@@ -1,4 +1,4 @@
-import { GRGP2025, Heritage2024, KantharPurCenturyRide } from "../images/blogs"
+import { GRGP2025, Heritage2024, KantharPurCenturyRide, AnniversaryRide2025 } from "../images/blogs"
 
 
 export const events = [
@@ -31,6 +31,16 @@ export const events = [
         participants: 20,
         image: KantharPurCenturyRide,
         description: "Century Ride from Ahmedabad to Kantharpur. 120 Km Ride covering 2 heritage places -Halisha village’s Spiral Well and 500 years old Banyan Tree of Kantharpur. Out of 20, that was the first century ride of 10 riders. Enjoyed wonderful ride with nature passing through the greenery and farms of many villages on the route. Village Halisa on the route of Kantharpur is famous for their ''Spiral Step Well'' -called ''Bhbhammariyo Kuvo”, the unexplored heritage place – we visited this beautiful place. This stepwell is similar to the UNESCO World Heritage well in Portugal. Kantharpur Mahakali Vad, spread across over half an acre is the second largest Banyan tree after Kabirvad."
+    },
+    {
+        id: 'green-riders-anniversary-ride',
+        title: "Green Riders 1st Anniversary Celebration Ride",
+        date: "March 5, 2025",
+        location: "Govind Cycle → Gandhi Ashram → Riverfront",
+        distance: "18 Km",
+        participants: '60+',
+        image: AnniversaryRide2025, // Replace with actual image variable
+        description: "Green Riders celebrated their 1st Anniversary with a special ride covering Govind Cycle, Gandhi Ashram, and the Riverfront. The event saw **100+ registrations and 60+ cyclists participating** in this memorable ride. The morning was filled with energy, camaraderie, and a delightful breakfast after the ride. It was a fantastic celebration of community, cycling, and fitness!"
     }
 ];
 
