@@ -1,4 +1,4 @@
-import { GRGP2025, Heritage2024, KantharPurCenturyRide, AnniversaryRide2025, WomansdayRide2025 } from "../images/blogs"
+import { GRGP2025, Heritage2024, KantharPurCenturyRide, AnniversaryRide2025, WomansdayRide202504 } from "../images/blogs"
 
 
 export const events = [
@@ -49,7 +49,7 @@ export const events = [
         location: "Ahmedabad",
         distance: "10 km",
         participants: "50+",
-        image: WomansdayRide2025,
+        image: WomansdayRide202504,
         description: "A special Women's Day Ride organized by Cyclone Cycling Club in association with Decathlon CG Road. Green Riders joined in this empowering 10 km ride celebrating the strength and spirit of women in cycling."
     }
 ];

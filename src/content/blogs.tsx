@@ -1,4 +1,4 @@
-import { GRGP2025, AnniversaryRide2025, WomansdayRide2025, WomansdayRide202503, WomansdayRide202502,  } from "../images/blogs"
+import { GRGP2025, AnniversaryRide2025, WomansdayRide2025, WomansdayRide202503, WomansdayRide202502, WomansdayRide202504 } from "../images/blogs"
 
 type BlogPost = {
   title: string;
@@ -162,7 +162,7 @@ export const blogs:BlogPost[] = [
             Here's to many more rides that celebrate the power and resilience of women. Until next time, keep riding and keep inspiring! 🚴‍♀️💜
         </p>
     </div>`,
-    image: WomansdayRide2025,
+    image: WomansdayRide202504,
     author: "Green Riders Team",
     date: "2025-03-08",
     category: "Events"
