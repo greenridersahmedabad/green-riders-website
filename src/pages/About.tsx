@@ -84,6 +84,7 @@ const About = () => {
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
+                  loading="lazy"
                   src={member.image}
                   alt={member.name}
                   className="w-full h-64 object-cover"
@@ -95,8 +96,9 @@ const About = () => {
                     rel="noopener noreferrer"
                     className="font-semibold text-brand-500 hover:underline"
                   >
-
-                    <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {member.name}
+                    </h3>
                   </a>
                   <p className="text-brand-200 mb-4">{member.role}</p>
                   <p className="text-gray-600">{member.bio}</p>

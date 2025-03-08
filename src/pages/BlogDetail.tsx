@@ -28,7 +28,7 @@ const BlogDetail = () => {
 
       {/* Blog Content */}
       <div className="max-w-5xl mx-auto px-4 py-12">
-        <img src={blog.image} alt={blog.title} className="w-full h-96 object-cover rounded-lg mb-6" />
+        <img loading="lazy" src={blog.image} alt={blog.title} className="w-full h-96 object-cover rounded-lg mb-6" />
         {/* <p className="text-lg text-gray-700 leading-relaxed">{blog.content}</p> */}
         <div className="prose text-lg text-style-500 leading-relaxed" dangerouslySetInnerHTML={{ __html: blog.content }} />
 

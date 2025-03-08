@@ -1,4 +1,9 @@
-import { GRGP2025, AnniversaryRide2025, WomansdayRide2025, WomansdayRide202503, WomansdayRide202502, WomansdayRide202504 } from "../images/blogs"
+import GRGP2025 from "/images/blogs/GRGP2025/GRGP2025.jpg";
+import AnniversaryRide2025 from "/images/blogs/AnniversaryRide/AnniversaryRide2025.jpg";
+import WomansdayRide2025 from "/images/blogs/WomansdayRide2025/WomansdayRide2025.jpg";
+import WomansdayRide2025_2 from "/images/blogs/WomansdayRide2025/WomansdayRide2025-2.jpg";
+import WomansdayRide2025_3 from "/images/blogs/WomansdayRide2025/WomansdayRide2025-3.jpg";
+import WomansdayRide2025_4 from "/images/blogs/WomansdayRide2025/WomansdayRide2025-4.jpg";
 
 type BlogPost = {
   title: string;
@@ -118,7 +123,7 @@ export const blogs:BlogPost[] = [
         This <strong class="text-brand-300">10 km journey</strong> through the city streets, ending at <strong class="text-brand-300">Decathlon CG Road</strong>, was a true testament to the power and resilience of women in sports.
         </p>
         
-        <img class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide202503} alt="Women's Day Ride">
+        <img loading="lazy" class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide2025_3} alt="Women's Day Ride">
 
         <h2 class="text-xl font-semibold mt-6 text-brand-400">The Ride: Unity in Motion 🌍🚴‍♀️</h2>
         <p class="mt-2 text-brand-500">
@@ -126,7 +131,7 @@ export const blogs:BlogPost[] = [
             The event showcased that <strong class="text-brand-300">cycling is for everyone</strong>, driven not by gender but by determination and enthusiasm.
         </p>
 
-        <img class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide202502} alt="Group of cyclists">
+        <img loading="lazy" class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide2025_2} alt="Group of cyclists">
         <h2 class="text-xl font-semibold mt-6 text-brand-400">Celebrating Together 🎊💜</h2>
         <p class="mt-2 text-brand-500">
             The ride concluded with a gathering at <strong class="text-brand-300">Decathlon CG Road</strong>, where participants shared stories, enjoyed refreshments, and celebrated the growing presence of women in the cycling community. 
@@ -143,7 +148,7 @@ export const blogs:BlogPost[] = [
             Keep riding, keep inspiring! 🚴‍♀️💜
         </p>
 
-        <img class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide2025} alt="Group of cyclists">
+        <img loading="lazy" class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide2025} alt="Group of cyclists">
         <h2 class="text-xl font-semibold mt-6 text-brand-400">Today's Ride: A Celebration of Strength 🚴‍♀️🔥</h2>
         <p class="mt-2 text-brand-500">
             Today was a special day for cycling enthusiasts as Cyclone Cycling Club, in association with Decathlon CG Road, organized an inspiring Women's Day Ride. 
@@ -162,7 +167,7 @@ export const blogs:BlogPost[] = [
             Here's to many more rides that celebrate the power and resilience of women. Until next time, keep riding and keep inspiring! 🚴‍♀️💜
         </p>
     </div>`,
-    image: WomansdayRide202504,
+    image: WomansdayRide2025_4,
     author: "Green Riders Team",
     date: "2025-03-08",
     category: "Events"

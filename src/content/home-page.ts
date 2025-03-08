@@ -1,7 +1,6 @@
-import { url } from "inspector";
-import Image1 from "../images/Carousel/GR GROUP 1.jpg";
-import Image2 from "../images/Carousel/GR GROUP 2.jpg";
-import Image3 from "../images/Carousel/GR GROUP 3.jpg";
+import Image1 from "/images/Carousel/GR GROUP 1.jpg";
+import Image2 from "/images/Carousel/GR GROUP 2.jpg";
+import Image3 from "/images/Carousel/GR GROUP 3.jpg";
 import { footer } from "./footer";
 
 export const homePage = {

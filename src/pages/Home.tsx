@@ -6,7 +6,6 @@ import {
 import { homePage } from "../content/home-page";
 import HeroCarousel from "./HeroCarousel";
 import { stats } from "../content/stasts";
-import { quote } from "../content/quotes";
 import { footer } from "../content/footer";
 import QuoteSlider from "../components/QuoteSlider";
 

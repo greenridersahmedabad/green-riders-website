@@ -21,7 +21,7 @@ export default function EventDetails() {
       {/* Main Event Content */}
       <div className="w-full h-full flex flex-col justify-center items-center p-6">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-5xl w-full">
-          <img src={event.image} alt={event.title} className="w-full h-[40vh] object-cover" />
+          <img loading="lazy" src={event.image} alt={event.title} className="w-full h-[40vh] object-cover" />
           <div className="p-8">
             <h1 className="text-3xl font-bold text-gray-800 mb-3">{event.title}</h1>
             <p className="text-gray-600 mb-5 text-lg">{event.description}</p>

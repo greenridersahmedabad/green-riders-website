@@ -1,5 +1,5 @@
 import { useState, useEffect, FC } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface HeroCarouselPros {

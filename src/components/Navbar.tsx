@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import GRlogo from "../images/logos/green-riders-logo.png";
+import GRlogo from "/images/logos/green-riders-logo.png";
 import { footer } from "../content/footer";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
             to="/"
             className="text-brand-100 font-bold flex items-center space-x-2"
           >
-            <img className="h-16 w-auto" src={GRlogo} alt="image description" />
+            <img loading="lazy" className="h-16 w-auto" src={GRlogo} alt="image description" />
             <span className="font-bold text-xl">Green Riders</span>
           </Link>
 

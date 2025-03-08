@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Calendar, MapPin, Users, ArrowRight, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
+import { useState } from "react";
+import { Calendar, MapPin, Users, ArrowRight, ArrowUp, ArrowDown } from "lucide-react";
 import { sortingUtility, events } from "../content/events";
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,7 @@ const Events = () => {
                 key={index}
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
-                <img
+                <img loading="lazy"
                   src={event.image}
                   alt={event.title}
                   className="w-full h-48 object-cover"

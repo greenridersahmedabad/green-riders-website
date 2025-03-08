@@ -1,7 +1,7 @@
-import AK from '../images/founders/AK.jpg';
-import HK from '../images/founders/HK.jpg';
-import MV from '../images/founders/MV.jpg';
-import AboutUsImage from '../images/founders/about-us-image.jpg'
+import AK from '/images/founders/AK.jpg';
+import HK from '/images/founders/HK.jpg';
+import MV from '/images/founders/MV.jpg';
+import AboutUsImage from '/images/founders/about-us-image.jpg'
 
 
 export const aboutUsPage = {

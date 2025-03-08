@@ -61,7 +61,7 @@ const Blog = () => {
                 >
                   <div className="md:flex">
                     <div className="md:w-1/3">
-                      <img
+                      <img loading="lazy"
                         src={blog.image}
                         alt={blog.title}
                         className="h-48 w-full object-cover md:h-full"
