@@ -1,4 +1,4 @@
-import { GRGP2025, Heritage2024, KantharPurCenturyRide, AnniversaryRide2025 } from "../images/blogs"
+import { GRGP2025, Heritage2024, KantharPurCenturyRide, AnniversaryRide2025, WomansdayRide2025 } from "../images/blogs"
 
 
 export const events = [
@@ -41,6 +41,16 @@ export const events = [
         participants: '60+',
         image: AnniversaryRide2025, // Replace with actual image variable
         description: "Green Riders celebrated their 1st Anniversary with a special ride covering Govind Cycle, Gandhi Ashram, and the Riverfront. The event saw **100+ registrations and 60+ cyclists participating** in this memorable ride. The morning was filled with energy, camaraderie, and a delightful breakfast after the ride. It was a fantastic celebration of community, cycling, and fitness!"
+    },
+    {
+        id: "womens-day-ride-2025",
+        title: "Women's Day Ride",
+        date: "March 8, 2025",
+        location: "Ahmedabad",
+        distance: "10 km",
+        participants: "50+",
+        image: WomansdayRide2025,
+        description: "A special Women's Day Ride organized by Cyclone Cycling Club in association with Decathlon CG Road. Green Riders joined in this empowering 10 km ride celebrating the strength and spirit of women in cycling."
     }
 ];
 

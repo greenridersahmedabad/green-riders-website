@@ -1,4 +1,4 @@
-import { GRGP2025, AnniversaryRide2025 } from "../images/blogs"
+import { GRGP2025, AnniversaryRide2025, WomansdayRide2025, WomansdayRide202503, WomansdayRide202502,  } from "../images/blogs"
 
 type BlogPost = {
   title: string;
@@ -102,4 +102,69 @@ export const blogs:BlogPost[] = [
     date: "March 5, 2025",
     category: "Events",
   },
+  {
+    title: "Women's Day Ride",
+    slug: "womens-day-ride-2025",
+    highlightText: "Celebrating Women's Day on Wheels with Cyclone Cycling Club and Decathlon CG Road.",
+    content: `<div>
+        <h1 class="text-3xl font-bold text-brand-400">Celebrating Women's Day on Wheels: A Ride to Remember</h1>
+        <p class="text-brand-500"><strong>Date:</strong> March 8, 2025</p>
+        <p class="text-brand-500"><strong>Route:</strong> Gotila Garden → Decathlon CG Road</p>
+        <p class="text-brand-500"><strong>Participants:</strong> Cyclists from multiple communities</p>
+        
+        <h2 class="text-xl font-semibold mt-6 text-brand-400">A Morning of Empowerment 🚴✨</h2>
+        <p class="mt-2 text-brand-500">
+        The air was filled with excitement as cyclists gathered at <strong class="text-brand-300">Gotila Garden, Sindhubhavan Road</strong>, ready to embark on a ride symbolizing unity and strength. 
+        This <strong class="text-brand-300">10 km journey</strong> through the city streets, ending at <strong class="text-brand-300">Decathlon CG Road</strong>, was a true testament to the power and resilience of women in sports.
+        </p>
+        
+        <img class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide202503} alt="Women's Day Ride">
+
+        <h2 class="text-xl font-semibold mt-6 text-brand-400">The Ride: Unity in Motion 🌍🚴‍♀️</h2>
+        <p class="mt-2 text-brand-500">
+            Riders from different backgrounds and skill levels joined together, sharing smiles, encouragement, and a collective passion for cycling. 
+            The event showcased that <strong class="text-brand-300">cycling is for everyone</strong>, driven not by gender but by determination and enthusiasm.
+        </p>
+
+        <img class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide202502} alt="Group of cyclists">
+        <h2 class="text-xl font-semibold mt-6 text-brand-400">Celebrating Together 🎊💜</h2>
+        <p class="mt-2 text-brand-500">
+            The ride concluded with a gathering at <strong class="text-brand-300">Decathlon CG Road</strong>, where participants shared stories, enjoyed refreshments, and celebrated the growing presence of women in the cycling community. 
+            A special thanks to <strong class="text-brand-300">Cyclone Cycling Club</strong> and <strong class="text-brand-300">Decathlon CG Road</strong> for organizing this memorable event.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-6 text-brand-400">Looking Forward 🚴💚</h2>
+        <p class="mt-2 text-brand-500">
+            Green Riders, staying true to our spirit of <strong class="text-brand-300">'Exploring Nature'</strong>, embraced this ride with enthusiasm. 
+            This event reinforced the importance of inclusivity in cycling and paved the way for many more rides to come.
+        </p>
+
+        <p class="mt-4 font-bold text-brand-300">
+            Keep riding, keep inspiring! 🚴‍♀️💜
+        </p>
+
+        <img class="w-full h-64 object-cover rounded-lg mt-4" src=${WomansdayRide2025} alt="Group of cyclists">
+        <h2 class="text-xl font-semibold mt-6 text-brand-400">Today's Ride: A Celebration of Strength 🚴‍♀️🔥</h2>
+        <p class="mt-2 text-brand-500">
+            Today was a special day for cycling enthusiasts as Cyclone Cycling Club, in association with Decathlon CG Road, organized an inspiring Women's Day Ride. 
+            The event was a true celebration of strength, resilience, and the unbreakable spirit of women, bringing together riders from different cycling communities. 
+            Green Riders were proud to be a part of this empowering ride, pedaling alongside many passionate cyclists to honor the occasion.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-6 text-brand-400">A Ride to Remember 🌸</h2>
+        <p class="mt-2 text-brand-500">
+            As the ride concluded, a sense of accomplishment and joy filled the air. 
+            The event successfully highlighted the importance of women in sports, reinforcing the message that <strong class="text-brand-300">cycling is for everyone</strong>. 
+            A big shoutout to <strong class="text-brand-300">Cyclone Cycling Club</strong> and <strong class="text-brand-300">Decathlon CG Road</strong> for organizing such a fantastic event and for their efforts in promoting inclusivity in cycling.
+        </p>
+
+        <p class="mt-4 font-bold text-brand-300">
+            Here's to many more rides that celebrate the power and resilience of women. Until next time, keep riding and keep inspiring! 🚴‍♀️💜
+        </p>
+    </div>`,
+    image: WomansdayRide2025,
+    author: "Green Riders Team",
+    date: "2025-03-08",
+    category: "Events"
+}
 ];
