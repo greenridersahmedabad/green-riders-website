@@ -26,15 +26,13 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Green Riders was founded in 2022 by a group of passionate
-                cyclists who believed in the power of two wheels to make a
-                difference. What started as weekend rides with friends has grown
-                into a movement of environmentally conscious cyclists.
+              <strong className="text-brand-300">Green Riders</strong> was founded on 5 March 2024 by a group of passionate cyclists who believed in the power of two wheels to make a difference. 
+              </p>
+              <p className="text-gray-600 mb-4">
+              With the motto of Riding while <strong className="text-brand-300">Exploring Nature</strong>, Green Riders stands apart by focusing on off-road adventures, heritage trails, village rides, forest expeditions, and monsoon explorations, rather than just distance cycling on routine routes. Our journey has been filled with remarkable achievements.
               </p>
               <p className="text-gray-600">
-                Today, we organize regular rides, workshops, and events that
-                bring together cyclists of all levels while promoting
-                sustainable transportation and environmental awareness.
+              GREEN RIDERS works & support for all social initiatives- <strong className="text-brand-300">NO Drugs, Save Soil, Save Nature, Save Environment, Pedalling for Health, FIT INDIA, Swachh Bharat Mission</strong> and all major Cyclothons being organised for noble cause.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
