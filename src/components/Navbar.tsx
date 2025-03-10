@@ -15,7 +15,12 @@ const Navbar = () => {
             to="/"
             className="text-brand-100 font-bold flex items-center space-x-2"
           >
-            <img loading="lazy" className="h-16 w-auto" src={GRlogo} alt="image description" />
+            <img
+              loading="lazy"
+              className="h-16 w-auto"
+              src={GRlogo}
+              alt="image description"
+            />
             <span className="font-bold text-xl">Green Riders</span>
           </Link>
 
@@ -26,6 +31,12 @@ const Navbar = () => {
               className="text-brand-100 font-bold hover:text-brand-50 transition-colors"
             >
               Home
+            </Link>
+            <Link
+              to="/awards"
+              className="text-brand-100 font-bold hover:text-brand-50 transition-colors"
+            >
+              Awards
             </Link>
             <Link
               to="/blog"
@@ -73,6 +84,12 @@ const Navbar = () => {
                 className="block px-3 py-2 rounded-md hover:bg-brand-300"
               >
                 Home
+              </Link>
+              <Link
+                to="/awards"
+                className="block px-3 py-2 rounded-md hover:bg-brand-300"
+              >
+                Awards
               </Link>
               <Link
                 to="/blog"

@@ -1,3 +1,5 @@
+import { label } from "framer-motion/client";
+import { url } from "inspector";
 import { Instagram, Bike, Mail, MapPin, Youtube } from "lucide-react";
 
 export const whatsappNumber = "919825556300";
@@ -16,6 +18,9 @@ export const footer = {
       {
         label: "Home",
         url: "/",
+      },{
+        label: "Awards",
+        url: "/awards"
       },
       {
         label: "About Us",
