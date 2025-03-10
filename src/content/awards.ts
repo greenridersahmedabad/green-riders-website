@@ -1,3 +1,27 @@
+import DrNeilShah from "/images/awards/2024/1.jpg";
+import ArunNair from "/images/awards/2024/2.jpg";
+import AtulRamani from "/images/awards/2024/3.jpg";
+import MayurThakkar from "/images/awards/2024/4.jpg";
+import DilipShah from "/images/awards/2024/5.jpg";
+import KaushikPatel from "/images/awards/2024/6.jpg";
+import RushabhShah from "/images/awards/2024/7.jpg";
+import ChiragShah from "/images/awards/2024/8.jpg";
+import JaydeepKansara from "/images/awards/2024/9.jpg";
+import NipunLeuva from "/images/awards/2024/10.jpg";
+import MiteshVansola from "/images/awards/2024/11-12.jpg";
+import AyushKholiya from "/images/awards/2024/11-12.jpg";
+import BharatModi from "/images/awards/2024/13.jpg";
+import DrManishSutaria from "/images/awards/2024/14.jpg";
+import DhavalDave from "/images/awards/2024/15.jpg";
+import ChiragPatel from "/images/awards/2024/16.jpg";
+import RajMajmudar from "/images/awards/2024/17.jpg";
+import GopalShah from "/images/awards/2024/18.jpg";
+import TarniShah from "/images/awards/2024/19.jpg";
+import NiravPatel from "/images/awards/2024/20.jpg";
+import SurajShah from "/images/awards/2024/21.jpg";
+import RushilVaidya from "/images/awards/2024/22.jpg";
+import RajdeepSefatara from "/images/awards/2024/23.jpg";
+
 interface Award {
   id: string;
   title: string;
@@ -19,7 +43,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: DrNeilShah,
     date: "March 5, 2025",
     strava: "",
   },
@@ -31,7 +55,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: ArunNair,
     date: "March 5, 2025",
     strava: "",
   },
@@ -43,7 +67,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: AtulRamani,
     date: "March 5, 2025",
     strava: "",
   },
@@ -55,7 +79,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: MayurThakkar,
     date: "March 5, 2025",
     strava: "",
   },
@@ -67,7 +91,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: DilipShah,
     date: "March 5, 2025",
     strava: "",
   },
@@ -79,7 +103,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: KaushikPatel,
     date: "March 5, 2025",
     strava: "",
   },
@@ -91,7 +115,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: RushabhShah,
     date: "March 5, 2025",
     strava: "",
   },
@@ -103,7 +127,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: ChiragShah,
     date: "March 5, 2025",
     strava: "",
   },
@@ -115,7 +139,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: JaydeepKansara,
     date: "March 5, 2025",
     strava: "",
   },
@@ -127,7 +151,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: NipunLeuva,
     date: "March 5, 2025",
     strava: "",
   },
@@ -139,7 +163,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: MiteshVansola,
     date: "March 5, 2025",
     strava: "",
   },
@@ -151,7 +175,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: AyushKholiya,
     date: "March 5, 2025",
     strava: "",
   },
@@ -163,7 +187,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: BharatModi,
     date: "March 5, 2025",
     strava: "",
   },
@@ -175,7 +199,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: DrManishSutaria,
     date: "March 5, 2025",
     strava: "",
   },
@@ -187,7 +211,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: DhavalDave,
     date: "March 5, 2025",
     strava: "",
   },
@@ -199,7 +223,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: ChiragPatel,
     date: "March 5, 2025",
     strava: "",
   },
@@ -211,7 +235,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: RajMajmudar,
     date: "March 5, 2025",
     strava: "",
   },
@@ -223,7 +247,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: GopalShah,
     date: "March 5, 2025",
     strava: "",
   },
@@ -235,7 +259,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: TarniShah,
     date: "March 5, 2025",
     strava: "",
   },
@@ -247,7 +271,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: NiravPatel,
     date: "March 5, 2025",
     strava: "",
   },
@@ -259,7 +283,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: SurajShah,
     date: "March 5, 2025",
     strava: "",
   },
@@ -271,7 +295,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: RushilVaidya,
     date: "March 5, 2025",
     strava: "",
   },
@@ -283,7 +307,7 @@ export const awards: Award[] = [
     year: 2024,
     description:
       "Recognized for leading initiatives that reduced carbon emissions by organizing large-scale cycling events.",
-    image: "",
+    image: RajdeepSefatara,
     date: "March 5, 2025",
     strava: "",
   },
