@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Calendar, User, ArrowRight } from "lucide-react";
+import { Calendar, User, ArrowRight, ArrowUp, ArrowDown } from "lucide-react";
 import { blogs } from "../content/blogs";
+import { sortingUtility } from "../content/events";
 
 const categories = [
   "All Posts",
@@ -13,6 +14,12 @@ const categories = [
 ];
 
 const Blog = () => {
+  const [isDescending, setIsDescending] = useState(true);
+
+  const toggleSortOrder = () => {
+    setIsDescending(!isDescending);
+  };
+
   return (
     <div className="bg-brand-50 min-h-screen">
       {/* Header */}
@@ -29,15 +36,32 @@ const Blog = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
           <div className="lg:w-2/3">
+            {/* Sorting Button */}
+            <div className="flex items-center justify-between mb-8">
+              <h2 className="text-2xl font-bold flex items-center">
+                Blog Posts
+                <button
+                  onClick={toggleSortOrder}
+                  className="ml-2 px-2 py-1 bg-brand-300 text-white rounded-full transition"
+                >
+                  {isDescending ? (
+                    <ArrowDown className="h-5 w-5" />
+                  ) : (
+                    <ArrowUp className="h-5 w-5" />
+                  )}
+                </button>
+              </h2>
+            </div>
+
             <div className="grid gap-8">
-              {blogs.map((blog, index) => (
+              {sortingUtility(blogs, isDescending).map((blog, index) => (
                 <article
                   key={index}
                   className="bg-white rounded-lg shadow-md overflow-hidden"
                 >
                   <div className="md:flex">
                     <div className="md:w-1/3">
-                      <img
+                      <img loading="lazy"
                         src={blog.image}
                         alt={blog.title}
                         className="h-48 w-full object-cover md:h-full"

@@ -1,53 +1,63 @@
-export const quote = {
-  title: "What Our Riders Say",
-  testimonials: [
+export const quote ={
+  "title": "What Our Riders Say",
+  "quotes": [
     {
-      quote:
-        "Green Riders changed my perspective on cycling. It's not just about exercise, it's about community and environmental impact.",
-      author: "Sarah Johnson",
-      role: "Member since 2023",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "quote": "I started serious cycling after joining Green Riders in June 2024. Before that, I was just riding solo for short distances. My first ride with Green Riders was a revelation—lush green landscapes, bird calls, and an amazing community. Since then, it has been an incredible journey, filled with century rides and new challenges.",
+      "author": "Arun R Nair",
+      "role": "Member since 2024",
+      "strava": "https://strava.app.link/H4tx0f9XeRb"
     },
     {
-      quote:
-        "The weekend rides are the highlight of my week. Great routes, amazing people, and a shared mission to protect our planet.",
-      author: "Michael Chen",
-      role: "Member since 2022",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "quote": "Cycling with Green Riders has transformed my fitness and allowed me to explore the outskirts of Ahmedabad in a unique way. Achieving my first century ride was only possible because of the motivation and support from this group.",
+      "author": "Bhavin Kalal",
+      "role": "Member since 2024",
+      "strava": "https://strava.app.link/H4tx0f9XeRb"
     },
     {
-      quote:
-        "I've made lifelong friends here. The community is supportive, and the rides are always well-organized.",
-      author: "Emma Rodriguez",
-      role: "Member since 2023",
-      image:
-        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "quote": "An amazing community where all members are helpful. The experience of exploring new routes and cycling with friends has been truly fulfilling.",
+      "author": "Raj Suresh Majmudar",
+      "role": "Member since 2024",
+      "strava": "https://strava.app.link/NOYBR8FEbRb"
     },
     {
-      quote:
-        "As a beginner, I was worried about keeping up, but the community has been so welcoming and supportive.",
-      author: "David Kim",
-      role: "Member since 2024",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "quote": "Not just a cycling group, but a family. As a professional living away from home, Green Riders never lets you feel alone.",
+      "author": "Yatri Gandhi",
+      "role": "Member since 2024"
     },
     {
-      quote:
-        "The environmental impact tracking feature really puts into perspective how much difference cycling can make.",
-      author: "Lisa Martinez",
-      role: "Member since 2023",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "quote": "Green Riders is the best cycling community. It caters to all—from beginners to endurance riders. The support from senior members is incredible, making it a welcoming group for all.",
+      "author": "Ketan Thakkar",
+      "role": "Member since 2024"
     },
     {
-      quote:
-        "The organized group rides have helped me discover beautiful routes I never knew existed in our area.",
-      author: "James Wilson",
-      role: "Member since 2024",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      "quote": "Every ride with Green Riders is an adventure. Whether cruising along the riverfront or through green landscapes, the camaraderie and motivation make every ride special.",
+      "author": "Nipun Leuva",
+      "role": "Member since 2024",
+      "strava": "https://strava.app.link/2XRheZP9eRb"
     },
-  ],
-};
+    {
+      "quote": "Exploring unknown routes just outside the city has been an eye-opener. Green Riders helps push limits while keeping the love for nature alive.",
+      "author": "Prakash Kholiya",
+      "role": "Member since 2024",
+      "strava": "https://strava.app.link/XYQ4Yd6RbRb"
+    },
+    {
+      "quote": "Unity and community spirit define Green Riders. Every ride is about helping each other and building strong friendships.",
+      "author": "Shah Dilipkumar",
+      "role": "Member since 2024",
+      "strava": "https://drive.google.com/open?id=1P4NxrhDXynAJY9EZLsGu7dkUegXVNdHm"
+    },
+    {
+      "quote": "Green Riders is more than a cycling group—it’s a platform for adventure, fitness, and community bonding.",
+      "author": "Bharat Modi",
+      "role": "Member since 2024",
+      "strava": "https://strava.app.link/R6D6JsigfRb"
+    },
+    {
+      "quote": "A fantastic cycling group that supports fitness, nature conservation, and personal growth.",
+      "author": "Prakash Chauhan",
+      "role": "Member since 2024",
+      "strava": "https://strava.app.link/PLBaOAMXeRb"
+    }
+  ]
+}

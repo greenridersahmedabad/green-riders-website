@@ -27,23 +27,13 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Green Riders was founded on 5 March 2024 by a group of
-                passionate cyclists who believed in the power of two wheels to
-                make a difference.
+              <strong className="text-brand-300">Green Riders</strong> was founded on 5 March 2024 by a group of passionate cyclists who believed in the power of two wheels to make a difference. 
               </p>
               <p className="text-gray-600 mb-4">
-                With the motto of Riding while Exploring Nature, Green Riders
-                stands apart by focusing on off-road adventures, heritage
-                trails, village rides, forest expeditions, and monsoon
-                explorations, rather than just distance cycling on routine
-                routes. Our journey has been filled with remarkable
-                achievements.
+              With the motto of Riding while <strong className="text-brand-300">Exploring Nature</strong>, Green Riders stands apart by focusing on off-road adventures, heritage trails, village rides, forest expeditions, and monsoon explorations, rather than just distance cycling on routine routes. Our journey has been filled with remarkable achievements.
               </p>
-              <p className="text-gray-600 mb-4">
-                GREEN RIDERS works & support for all social initiatives- NO
-                Drugs, Save Soil, Save Nature, Save Environment, Pedalling for
-                Health, FIT INDIA, Swachh Bharat Mission and all major
-                Cyclothons being organized for noble cause.
+              <p className="text-gray-600">
+              GREEN RIDERS works & support for all social initiatives- <strong className="text-brand-300">NO Drugs, Save Soil, Save Nature, Save Environment, Pedalling for Health, FIT INDIA, Swachh Bharat Mission</strong> and all major Cyclothons being organised for noble cause.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -93,12 +83,22 @@ const About = () => {
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
+                  loading="lazy"
                   src={member.image}
                   alt={member.name}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                  <a
+                    href={member.strava}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-brand-500 hover:underline"
+                  >
+                    <h3 className="text-xl font-semibold mb-2">
+                      {member.name}
+                    </h3>
+                  </a>
                   <p className="text-brand-200 mb-4">{member.role}</p>
                   <p className="text-gray-600">{member.bio}</p>
                 </div>

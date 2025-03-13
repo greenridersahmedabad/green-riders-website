@@ -6,9 +6,9 @@ import {
 import { homePage } from "../content/home-page";
 import HeroCarousel from "./HeroCarousel";
 import { stats } from "../content/stasts";
-import { quote } from "../content/quotes";
 import { footer } from "../content/footer";
-import Testimony from "../components/Testimony";
+import QuoteSlider from "../components/QuoteSlider";
+
 
 const Home = () => {
   return (
@@ -46,7 +46,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimony />
+      <QuoteSlider />
 
       {/* Join Us CTA */}
       <section className="py-16 bg-brand-200 text-white">
