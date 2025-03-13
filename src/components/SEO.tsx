@@ -20,7 +20,7 @@ const SEO = () => {
       />
       <meta
         property="og:image"
-        content="/public/images/logos/green-riders-logo.png"
+        content="/images/logos/green-riders-logo.png"
       />
       <meta property="og:url" content="https://www.greenriders.org" />
 
@@ -30,7 +30,7 @@ const SEO = () => {
           "@type": "SportsOrganization",
           name: "Green Riders",
           url: "https://www.greenriders.org",
-          logo: "/public/images/logos/green-riders-logo.png",
+          logo: "/images/logos/green-riders-logo.png",
           description:
             "Green Riders - Exploring Nature through eco-friendly cycling adventures. Join our community for sustainable rides and scenic routes.",
           contactPoint: {
