@@ -23,14 +23,14 @@ export default function QuoteSlider() {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition sm:left-4"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition sm:left-4 z-10"
         >
           <ArrowLeft className="h-6 w-6" />
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition sm:right-4"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition sm:right-4 z-10"
         >
           <ArrowRight className="h-6 w-6" />
         </button>
