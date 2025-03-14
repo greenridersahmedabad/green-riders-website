@@ -15,6 +15,14 @@ export default function QuoteSlider() {
     setCurrentIndex((prev) => (prev === 0 ? quote.quotes.length - 1 : prev - 1));
   };
 
+  // Set up auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000); // Change slide every 5000ms (5 seconds)
+    
+    // Clear the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="bg-white py-16 relative">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
