@@ -74,7 +74,7 @@ export const awards: Award[] = [
     "recipient": "MAYUR THAKKAR",
     "category": "SR Champion",
     "year": 2024,
-    "description": "Experienced cyclist and SR rider.",
+    "description": "An inspiring cyclist, a 31-year-old businessman pedalled his way to a healthier life! In 1.5 years, he's Cycled over 9,500 km, lost an impressive 30 kg and earned the prestigious SR Title. His journey is a testament to the power of cycling for weight loss and overall fitness!",
     "image": MayurThakkar,
     "date": "March 5, 2025",
     "strava": ""
@@ -107,7 +107,7 @@ export const awards: Award[] = [
     "recipient": "RUSHABH SHAH",
     "category": "Golden Pedals Awards",
     "year": 2024,
-    "description": "Cyclist and active participant, specializing in single-speed cycling.",
+    "description": "At 65, this ex-banker is shattering age barriers! Tracked almost every route across India. Yoga expert. Matches speed with regular riders on his non-geared cycle. Most consistent and time punctual rider. A true inspiration, proving that Age is No Bar! His dedication, passion, and energy are contagious!",
     "image": RushabhShah,
     "date": "March 5, 2025",
     "strava": ""
